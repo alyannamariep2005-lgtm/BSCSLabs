@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> <marquee >Welcome to my Website!</marquee>  </h1>
+
+    <p id="content"></p>
+
+    
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="hello(), closemessage()">Submit</button>
+
+    <script>
+        function hello(){
+            let name = document.getElementById("name").value;
+            document.getElementById("content").textContent="Hello " + name;
+        }
+
+         function closemessage(){
+            alert("bye");
+        }
+
+    </script>
+
+    
+
+    <!--img src="one.png"id="image" alt="">
+    <button onclick="document.getElementById('image').src='one.png',hello()">ON</button>
+    <button onclick="document.getElementById('image').src='window.png',hi()">OFF</button>
+
+    <script>
+        function hello(){
+            alert("Hello");
+        }
+
+        function hi(){
+            alert("Hi");
+        }
+    </script>
+
+----->
+
+</body>
+</html>
