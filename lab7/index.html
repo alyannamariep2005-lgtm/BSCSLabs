@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Enter a score to check your grade: </h2>
+
+    <input type="text" id="score" placeholder="Enter your score">
+    <input type="text" id="grade" placeholder="Enter your grade">
+
+    <select name="dropdown" id="dd">
+        <option value="per">Percentage</option>
+        <option value="pf">Pass/Fail</option>
+    </select>
+    
+    <button onclick="finalGrade()">Calculate Grade</button>
+    <br>
+    <img src="on-bulb.png" alt="">
+
+    <script>
+        function finalGrade(){
+            let num1 = document.getElementById("score").value;
+            let num2 = document.getElementById("grade").value;
+            let final = (num1/num2)*100
+            
+            if (final >= 75, final <= 80){
+                document.getElementById("finalGrade").valu
+            } else if (final >= 81, final <= 85){
+                document.getElementById("finalGrade")
+            } else if (final >= 86, final <= 90){
+                document.getElementById("finalGrade")
+            } else if (final >= 91){
+                document.getElementById("finalGrade")
+            } else {
+                document.getElementById("finalGrade")
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

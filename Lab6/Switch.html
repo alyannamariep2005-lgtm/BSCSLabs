@@ -13,17 +13,21 @@
 
     
     <input type="text" id="name" placeholder="Enter your name">
-    <button onclick="hello(), closemessage()">Submit</button>
+    <button onclick="hello()">Submit</button>
 
     <script>
         function hello(){
             let name = document.getElementById("name").value;
             document.getElementById("content").textContent="Hello " + name;
+            setTimeout(() => {
+                alert("You entered " + name);
+
+            }, 500);
+        
         }
 
-         function closemessage(){
-            alert("bye");
-        }
+
+    
 
     </script>
 
